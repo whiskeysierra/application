@@ -1,0 +1,182 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[ngerman]{babel}
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{4cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\include{info}
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Persönliche Angaben}
+
+\cvitem{Geburtsdatum}{13. September 1984}
+\cvitem{Staatsangehörigkeit}{deutsch}
+\cvitem{Familienstand}{ledig, keine Kinder}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Berufserfahrung}
+
+\cventry{01/2008 -- Heute}{Senior Software Engineer}{zeitweise Werkstudent}{\textsc{CosmoCode GmbH}}{Berlin}{\begin{itemize}
+\item Entwicklung von Java- und PHP-Web-Applikationen
+\item Technisches Projektmanagement
+\item Technische Konzeption
+\item Kundenkommunikation
+\item Performance-Optimierung
+\item Support
+\item Qualitätssicherung
+\item Resourcenmanagement
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{04/2005 -- 06/2005}{Praktikum}{\textsc{Heckel \& Schulz \& Co. GmbH}}{Berlin}{}{\begin{itemize}
+\item Hardware-Einkauf und Installation
+\item Planung und Einrichtung von Rechnernetzen
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{07/2004 -- 03/2005}{Zivildienst}{\textsc{Nordbahn gGmbH}}{Schönfließ}{}{}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Ausbildung}
+
+\cventry{10/2010 -- 04/2013}{Master of Science}{Medieninformatik}{Beuth Hochschule für Technik}{Berlin}{\textit{Durchschnittsnote -- 1.4}}  % Arguments not required can be left empty
+\cventry{10/2005 -- 09/2008}{Bachelor of Science}{Medieninformatik}{Technische Fachhochschule}{Berlin}{\textit{Durchschnittsnote -- 1.6}}
+\cventry{09/1997 -- 06/2004}{Allgemeine Hochschulreife}{Abitur}{Marie-Curie-Gymnasium}{Hohen Neuendorf}{\textit{Durchschnittsnote -- 2.2}}
+\cventry{08/1991 -- 07/1997}{Grundschule}{Glienicke/Nordbahn}{}{}{}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Master Thesis}
+\cvitem{Titel}{\emph{Design and Implementation of a Modular Benchmarking Framework to Evaluate Information Extraction Quality}}
+\cvitem{Betreuer}{Prof. Dr. Stefan Edlich \& Prof. Dr. Agathe Merceron}
+\cvitem{Source Code}{\url{https://github.com/whiskeysierra/banshie}}
+\cvitem{Beschreibung}{Ein hoch-modulares Framework für die OSGi-Service-Plattform mit dessen Hilfe die Qualität und die Laufzeitperformance von Informations-Extraktions-Systemen gemessen werden können.}
+
+\section{Referenzen}
+
+\subsection{Palava}
+\cvitem{Art}{Open Source}
+\cvitem{Jahr}{2010 -- 2012}
+\cvitem{Source Code}{\url{https://github.com/palava}}
+\cvitem{Team}{Tobias Sarnowski \& Oliver Lorenz}
+\cvitem{Beschreibung}{Palava ist ein extrem modulares Application-Framework für Java-Backends. Der zentrale Bestandteil ist eine mächtige Interprocess-Communication-API, die es erlaubt einheitliche Endpoints zu entwickeln die dann mit unterschiedlichste Transport-Technologien (z.B. \textsc{SOAP}, \textsc{REST}, \textsc{RMI}, \textsc{XML-RPC}, \textsc{JSON-RPC}, u.a.) genutzt werden können.}
+
+\vspace{10pt}
+
+\subsection{TheLabelFinder}
+\cvitem{Art}{Kunden-Projekt}
+\cvitem{Jahr}{2008 -- 2013}
+\cvitem{URL}{\url{http://www.thelabelfinder.com}}
+\cvitem{Beschreibung}{TheLabelFinder ist eine Fashion-Search-Engine auf Basis des Palava-Frameworks. Die Persistenz-, Index- und Query-Aufgaben übernehmen hier MySQL und mehrere Apache Solr Nodes, die sich im Master-Slave-Modus replizieren.}
+
+\vspace{10pt}
+
+\subsection{Helsing}
+\cvitem{Art}{Semester-Projekt}
+\cvitem{Jahr}{2011}
+\cvitem{Source Code}{\url{https://github.com/whiskeysierra/helsing}}
+\cvitem{Beschreibung}{Eine App mit Command-Line-Interface, die, ähnlich wie Hive, SQL-Queries in MapReduce-Jobs für die Hadoop-Plattform übersetzt. Entwickelt wurde der Prototyp um das Konzept von Google's MapReduce-SQL-Engine Tenzing zu verdeutlichen.}
+
+\newpage
+
+\subsection{Map-Labeling}
+\cvitem{Art}{Prototyp für Kundenprojekt}
+\cvitem{Jahr}{2008}
+\cvitem{Beschreibung}{Entwicklung eines genetischen Label-Placement-Algorithmus für eine semi-supervised Map-Applikation.}
+
+\vspace{10pt}
+
+\subsection{Steganography}
+\cvitem{Art}{Semester-Projekt}
+\cvitem{Jahr}{2001}
+\cvitem{Source Code}{\url{https://github.com/whiskeysierra/steganography}}
+\cvitem{Beschreibung}{Ein Python-Programm zum Verschlüsseln und Einbetten von Text-Nachrichten in Bitmaps.}
+
+\vspace{10pt}
+
+\subsection{Impaired Vision}
+\cvitem{Art}{Semester-Projekt}
+\cvitem{Jahr}{2011}
+\cvitem{Source Code}{\url{https://github.com/whiskeysierra/impaired-vision}}
+\cvitem{Beschreibung}{Eine Augmented Reality App zur Simulation von verschiedenen Farb-Sehstörungen für die Android-Plattform.}
+
+%----------------------------------------------------------------------------------------
+%	TECHNOLOGIES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technologien}
+Mit den folgenden Technologien arbeite ich entweder regelmäßig oder .
+\newline
+
+\cvitem{Sprachen}{\textsc{Java}, \textsc{SQL}, \textsc{JavaScript}, \textsc{AspectJ}, \textsc{PHP}, \textsc{HTML}, \textsc{Python}, \textsc{CSS}, \LaTeX, Shell}
+\cvitem{Data Stores}{\textsc{Solr}, \textsc{MySQL}, \textsc{PostgreSQL}}
+\cvitem{MapReduce}{\textsc{Hadoop}, \textsc{Hive}}
+\cvitem{Libraries}{\textsc{Guava}, \textsc{SLF4J}, \textsc{jQuery}, \textsc{Underscore}}
+\cvitem{Frameworks}{\textsc{Guice}, \textsc{JPA}, \textsc{Servlet API}, \textsc{Backbone}, \textsc{Symfony2}}
+\cvitem{Testing}{\textsc{Junit}, \textsc{EasyMock}, \textsc{Jukito}}
+\cvitem{SCM}{\textsc{Git}, \textsc{Subversion}}
+\cvitem{Build Tools}{\textsc{Ant}, \textsc{Maven}}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Sprachkenntnisse}
+
+\cvitemwithcomment{Deutsch}{Muttersprache}{}
+\cvitemwithcomment{English}{Fließend}{}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
