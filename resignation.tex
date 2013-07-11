@@ -1,0 +1,103 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[ngerman]{babel}
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%   NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Willi} % Your first name
+\familyname{Schönborn} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Lebenslauf}
+\address{Pieskower Weg 12}{10409 Berlin}
+\mobile{+49 178 6734208}
+\phone{+49 30 53085940}
+\email{w.schoenborn@gmail.com}
+
+%\homepage{www.github.com/whiskeysierra}{} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+
+%\extrainfo{additional information}
+
+\photo[75pt][0pt]{pictures/profile} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"Mein Fulli pusselt." - Willi Schönborn}
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+\recipient{Geschäftsführung}{CosmoCode GmbH\\Prenzlauer Allee 36\\10405 Berlin}
+%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{\textbf{Kündigung meines Arbeitsvertrages vom xx.xx.xxxx}\newline{}\newline{}Sehr geehrte Damen und Herren,} % Opening greeting
+\closing{} % Closing phrase
+%\enclosure[Anlagen]{Lebenslauf} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+hiermit kündige ich den o.g. Arbeitsvertrag unter Berücksichtigung der vertraglich vereinbarten Kündigungsfrist zum xx.xx.xx.
+ 
+Ich habe mich aus privaten Gründen dazu entschlossen, das Arbeitsverhältnis nicht weiter fortzuführen.
+ 
+Zeitgleich beantrage ich hiermit die verbleibenden xx Tage meines Jahresurlaubes, wodurch sich der xx.xx.xx als mein letzter Arbeitstag ergibt.
+ 
+Bitte senden Sie mir meine Arbeitspapiere sowie ein qualifiziertes Zeugnis an die oben aufgeführte Adresse. 
+
+Ich bedanke mich für die angenehme Zusammenarbeit und wünsche Ihnen und Ihrem Unternehmen weiterhin viel Erfolg.
+
+Mit freundlichen Grüßen,\\[1.5em]
+\includegraphics[width=3cm]{pictures/signature}
+
+\bfseries{Willi Schönborn}
+
+%\color{color2}\itshape Anlagen: Lebenslauf
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
